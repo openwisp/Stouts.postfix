@@ -27,6 +27,10 @@ smtp_tls_wrappermode = {{ postfix_smtp_tls_wrappermode }}
 smtp_tls_security_level = {{ postfix_smtp_tls_security_level }}
 {% endif %}
 
+{% if postfix_smtp_use_tls is defined %}
+smtp_use_tls = {{ postfix_smtp_use_tls }}
+{% endif %}
+
 {% endif %}
 
 myhostname = {{ postfix_myhostname }}
