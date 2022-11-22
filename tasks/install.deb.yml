@@ -2,13 +2,12 @@
 
 - name: Install requirements (Debian)
   apt:
-    update_cache: yes
+    update_cache: true
     name:
       - postfix
       - ca-certificates
       - mailutils
       - libsasl2-modules
-
 
 - name: Install DKIM requirements (Debian)
   apt:
